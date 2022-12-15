@@ -68,15 +68,15 @@ keyboard.keymap = [
      # |------+------+------+------+------+-------------+------+------+------+------+------|
      # |      |   {  |   }  |   +  |   _  |      |      |   -  |   =  |   [  |   ]  |  \   |
      # |------+------+------+------+------+------|------+------+------+------+------+------|
-     # |      |      |   7  |  8   |   9  |      |      |      |      |      |      |      |
+     # |      |      |      |      |      |      |      | vol+ | vol- | mute |plypau|      |
      # |------+------+------+------+------+------+------+------+------+------+------+------|
-     # |      |      |   *  |   0  |   #  |      |      |      |      |      |      |      |
+     # |      |      |      |      |      |      |      |      |      |      |      |      |
      # `-----------------------------------------------------------------------------------'
      
     [  #SYMBOL
         KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
         XXXXXXX, KC.LCBR, KC.RCBR, KC.PLUS, KC.UNDS, KC.F5,   KC.F6,   KC.MINS, KC.EQL, KC.LBRC, KC.RBRC, KC.BSLS,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY, XXXXXXX, 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
     ],
     [  #PAD
