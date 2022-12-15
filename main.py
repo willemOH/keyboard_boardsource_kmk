@@ -59,8 +59,20 @@ keyboard.keymap = [
         KC.GRV,  KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   UNDO,    CUT,     COPY,    PASTE,    KC.BSPC,
         XXXXXXX, KC.HOME, KC.PGDN, KC.PGUP, KC.END,  XXXXXXX, XXXXXXX, KC.LEFT, KC.UP,   KC.DOWN, KC.RIGHT, XXXXXXX,
         XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX, KC.LCTL, KC.LSFT, MAIN,    KC.RSFT, KC.SPC,  KC.LEFT, KC.UP,   KC.DOWN,  KC.RIGHT
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.LCTL, MAIN,    KC.RSFT, KC.SPC,  KC.LEFT, KC.UP,   KC.DOWN,  KC.RIGHT
     ],
+    
+     # Layer _SYMBOL
+     # ,-----------------------------------------------------------------------------------.
+     # |      |   !  |   @  |   #  |   $  |  %   |   ^  |   &  |   *  |   (  |   )  |      |
+     # |------+------+------+------+------+-------------+------+------+------+------+------|
+     # |      |   _  |   {  |   }  |   +  |      |      |   -  |   =  |   [  |   ]  |  \   |
+     # |------+------+------+------+------+------|------+------+------+------+------+------|
+     # |      |      |   7  |  8   |   9  |      |      |      |      |      |      |      |
+     # |------+------+------+------+------+------+------+------+------+------+------+------|
+     # |      |      |   *  |   0  |   #  |MainLr|      |      |      |      |      |      |
+     # `-----------------------------------------------------------------------------------'
+     
     [  #SYMBOL
         KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
         KC.DEL,  KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   KC.UNDS, KC.PLUS, KC.LCBR, KC.RCBR, KC.PIPE,
