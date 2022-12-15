@@ -18,7 +18,8 @@ XXXXXXX = KC.NO
 
 MAIN = KC.TO(0) 
 NAV = KC.TT(1)
-SYMPAD = KC.LT(2, 3)
+SYMBOL = KC.MO(2)
+PAD = KC.TG(3) 
 
 UNDO = KC.LCTL(KC.Z)
 CUT = KC.LCTL(KC.X)
@@ -41,7 +42,7 @@ keyboard.keymap = [
         KC.TAB,  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,    KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,    KC.BSPC,
         KC.ESC,  KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, KC.QUOT,
         KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.ENT ,
-        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMPAD,  KC.SPC,  KC.LEFT, KC.PSCR, KC.INS,  XXXXXXX
+        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMBOL,  KC.SPC,  KC.LEFT, KC.PSCR, KC.INS,  XXXXXXX
     ],                              
                                                                                             
      # Layer _NAV
@@ -74,17 +75,29 @@ keyboard.keymap = [
      # `-----------------------------------------------------------------------------------'
      
     [  #SYMBOL
-        KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
-        XXXXXXX, KC.LCBR, KC.RCBR, KC.PLUS, KC.UNDS, KC.F5,   KC.F6,   KC.MINS, KC.EQL, KC.LBRC, KC.RBRC, KC.BSLS,
+        KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, KC.LCBR, KC.RCBR, KC.PLUS, KC.UNDS, KC.F5,   KC.F6,   KC.MINS, KC.EQL, KC.LBRC, KC.RBRC, XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY, XXXXXXX, 
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
     ],
+    
+     # Layer _PAD
+     # ,-----------------------------------------------------------------------------------.
+     # |      |      |   1  |   2  |   3  |      |      |   +  |      |      |      |bckspc|
+     # |------+------+------+------+------+-------------+------+------+------+------+------|
+     # |      |      |   4  |   5  |   6  |      |      |   -  |   =  |   *  |   /  |  del |
+     # |------+------+------+------+------+------|------+------+------+------+------+------|
+     # |      |      |   7  |  8   |   9  |      |      |      |      |      |      |      |
+     # |------+------+------+------+------+------+------+------+------+------+------+------|
+     # |      |      |   *  |   0  |   #  | Main |      |      |      |      |      |      |
+     # `-----------------------------------------------------------------------------------'
+     
     [  #PAD
-        KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
-        KC.DEL,  KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   KC.UNDS, KC.PLUS, KC.LCBR, KC.RCBR, KC.PIPE,
-        XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  XXXXXXX, XXXXXXX, KC.HOME, KC.END,  XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY
-    ] 
+        XXXXXXX, XXXXXXX, KC.P1,   KC.P2, KC.P3,   XXXXXXX, XXXXXXX, KC.PLUS, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
+        XXXXXXX, XXXXXXX, KC.P4,   KC.P5, KC.P6,   XXXXXXX, XXXXXXX, KC.MINS, KC.EQL, KC.PAST, KC.SLSH, KC.DEL,
+        XXXXXXX, XXXXXXX, KC.P7,   KC.P8, KC.P9,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
+        XXXXXXX, XXXXXXX, KC.PAST, KC.P0, KC.HASH, MAIN,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+    ]  
 ]  
    
 if __name__ == '__main__':
