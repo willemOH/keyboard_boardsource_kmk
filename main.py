@@ -18,7 +18,7 @@ XXXXXXX = KC.NO
 
 MAIN = KC.TO(0) 
 NAV = KC.TT(1)
-SYMBOL = KC.LT(2, 3)
+SYMPAD = KC.LT(2, 3)
 
 UNDO = KC.LCTL(KC.Z)
 CUT = KC.LCTL(KC.X)
@@ -41,7 +41,7 @@ keyboard.keymap = [
         KC.TAB,  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,    KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,    KC.BSPC,
         KC.ESC,  KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, KC.QUOT,
         KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.ENT ,
-        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMBOL,  KC.SPC,  KC.LEFT, KC.PSCR, KC.INS,  XXXXXXX
+        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMPAD,  KC.SPC,  KC.LEFT, KC.PSCR, KC.INS,  XXXXXXX
     ],                              
                                                                                             
      # Layer _NAV
@@ -58,7 +58,7 @@ keyboard.keymap = [
     [  #NAV 
         KC.GRV,  KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   UNDO,    CUT,     COPY,    PASTE,    KC.DEL,
         KC.ESC, KC.HOME, KC.PGDN, KC.PGUP, KC.END,  XXXXXXX, XXXXXXX, KC.LEFT, KC.UP,   KC.DOWN, KC.RIGHT, XXXXXXX,
-        XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
+        XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  KC.VOLU, KC.VOLD, KC.MUTE, KC.MPLY,  XXXXXXX,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.LCTL, MAIN,    KC.RSFT, KC.SPC,  KC.LEFT, KC.UP,   KC.DOWN,  KC.RIGHT
     ],
     
@@ -70,14 +70,14 @@ keyboard.keymap = [
      # |------+------+------+------+------+------|------+------+------+------+------+------|
      # |      |      |   7  |  8   |   9  |      |      |      |      |      |      |      |
      # |------+------+------+------+------+------+------+------+------+------+------+------|
-     # |      |      |   *  |   0  |   #  |MainLr|      |      |      |      |      |      |
+     # |      |      |   *  |   0  |   #  |      |      |      |      |      |      |      |
      # `-----------------------------------------------------------------------------------'
      
     [  #SYMBOL
         KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
-        XXXXXXX, KC.LCBR,   KC.RCBR,   KC.PLUS,   KC.UNDS,   KC.F5,   KC.F6,   KC.MINS, KC.EQL, KC.LBRC, KC.RBRC, KC.BSLS,
-        XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  XXXXXXX, XXXXXXX, KC.HOME, KC.END,  XXXXXXX,
+        XXXXXXX, KC.LCBR, KC.RCBR, KC.PLUS, KC.UNDS, KC.F5,   KC.F6,   KC.MINS, KC.EQL, KC.LBRC, KC.RBRC, KC.BSLS,
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC.MNXT, KC.VOLD, KC.VOLU, KC.MPLY
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
     ],
     [  #PAD
         KC.TILD, KC.EXLM, KC.AT,   KC.HASH, KC.DLR,  KC.PERC, KC.CIRC, KC.AMPR, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
