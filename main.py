@@ -20,6 +20,7 @@ MAIN = KC.TO(0)
 NAV = KC.TT(1)
 SYMBOL = KC.MO(2)
 PAD = KC.TG(3) 
+SYS = KC.TG(4)
 
 UNDO = KC.LCTL(KC.Z)
 CUT = KC.LCTL(KC.X)
@@ -42,7 +43,7 @@ keyboard.keymap = [
         KC.TAB,  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,    KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,    KC.BSPC,
         KC.ESC,  KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, KC.QUOT,
         KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,    KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.ENT ,
-        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMBOL,  KC.SPC,  KC.LEFT, KC.PSCR, KC.INS,  XXXXXXX
+        KC.CAPS, KC.LCTL, KC.LALT, KC.LGUI, NAV,     KC.SPC,  SYMBOL,  KC.SPC,  PAD,     KC.PSCR, KC.INS,  SYS
     ],                              
                                                                                             
      # Layer _NAV
@@ -94,6 +95,24 @@ keyboard.keymap = [
      
     [  #PAD
         XXXXXXX, XXXXXXX, KC.P1,   KC.P2, KC.P3,   XXXXXXX, XXXXXXX, KC.PLUS, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
+        XXXXXXX, XXXXXXX, KC.P4,   KC.P5, KC.P6,   XXXXXXX, XXXXXXX, KC.MINS, KC.EQL, KC.PAST, KC.SLSH, KC.DEL,
+        XXXXXXX, XXXXXXX, KC.P7,   KC.P8, KC.P9,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
+        XXXXXXX, XXXXXXX, KC.PAST, KC.P0, KC.HASH, MAIN,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
+    ],
+    
+    # Layer _SYS
+     # ,-----------------------------------------------------------------------------------.
+     # | linux|windws| mac  | noop |      |      |      |   +  |      |      |      |bckspc|
+     # |------+------+------+------+------+-------------+------+------+------+------+------|
+     # |      |      |   4  |   5  |   6  |      |      |   -  |   =  |   *  |   /  |  del |
+     # |------+------+------+------+------+------|------+------+------+------+------+------|
+     # |      |      |   7  |  8   |   9  |      |      |      |      |      |      |      |
+     # |------+------+------+------+------+------+------+------+------+------+------+------|
+     # |      |      |   *  |   0  |   #  | Main |      |      |      |      |      |      |
+     # `-----------------------------------------------------------------------------------'
+     
+    [  #SYS
+        KC.UC_MODE_LINUX, KC.UC_MODE_WINC, KC.UC_MODE_MACOS,   KC.UC_MODE_NOOP, XXXXXXX,   XXXXXXX, XXXXXXX, KC.PLUS, KC.ASTR, KC.LPRN, KC.RPRN, KC.BSPC,
         XXXXXXX, XXXXXXX, KC.P4,   KC.P5, KC.P6,   XXXXXXX, XXXXXXX, KC.MINS, KC.EQL, KC.PAST, KC.SLSH, KC.DEL,
         XXXXXXX, XXXXXXX, KC.P7,   KC.P8, KC.P9,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX,
         XXXXXXX, XXXXXXX, KC.PAST, KC.P0, KC.HASH, MAIN,    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX
