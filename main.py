@@ -42,7 +42,7 @@ keyboard.keymap = [
      # |------+------+------+------+------+------|------+------+------+------+------+------|
      # | PAD  |   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |  /   |Enter |
      # |------+------+------+------+------+------+------+------+------+------+------+------|
-     # | Caps |      |  Alt |  GUI |  NAV | Ctrl | Shift|Sp/SYM|      |PrntSc|Insert| SYS  |
+     # | SYS  | Caps |  Alt |  Ctrl|  NAV | GUI  |enter |Sp/SYM| Shift|      |Insert|PrnScn|
      # `-----------------------------------------------------------------------------------' 
     [  #MAIN
         KC.TAB,  KC.Q,    KC.W,    KC.E,    KC.R, KC.T,    KC.Y,   KC.U,   KC.I,     KC.O,    KC.P,    KC.BSPC,
