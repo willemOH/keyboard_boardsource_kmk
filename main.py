@@ -22,7 +22,7 @@ _______ = KC.TRNS
 XXXXXXX = KC.NO
 
 MAIN = KC.TO(0) 
-NAV = KC.TT(1)
+NAV = KC.MO(1)
 SYMBOL = KC.LT(2, KC.SPC, prefer_hold=True, tap_interrupted=False, tap_time=None)
 PAD = KC.TG(2)                                                 
 SYS = KC.MO(3)
