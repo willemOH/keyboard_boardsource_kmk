@@ -64,7 +64,7 @@ keyboard.keymap = [
            
     [  #NAV 
         KC.TAB,  KC.F1,   KC.F2,   KC.F3,   KC.F4,   KC.F5,   KC.F6,   UNDO,    CUT,     COPY,    PASTE,    KC.BSPC,
-        KC.ESC,  KC.HOME, KC.PGDN, KC.PGUP, KC.END,  XXXXXXX, XXXXXXX, KC.LEFT, KC.DOWN,   KC.UP, KC.RIGHT, KC.DEL,
+        KC.ESC,  KC.HOME, KC.PGUP, KC.PGDN, KC.END,  XXXXXXX, XXXXXXX, KC.LEFT, KC.DOWN,   KC.UP, KC.RIGHT, KC.DEL,
         XXXXXXX, KC.F7,   KC.F8,   KC.F9,   KC.F10,  KC.F11,  KC.F12,  KC.VOLU, KC.VOLD, KC.MUTE, KC.MPLY,  KC.ENT,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______
     ],
