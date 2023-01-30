@@ -71,19 +71,19 @@ keyboard.keymap = [
     
      # Layer _SYMBOL/PAD
      # ,-----------------------------------------------------------------------------------.
-     # |      |   0  |   1  |   2  |   3  |   $  |   #  |   +  |   *  |   {  |   }  | Bksp |
+     # |   ~  |   1  |   2  |   3  |   !  |   #  |   $  |   %  |   [  |   ]  |   {  |  }   |
      # |------+------+------+------+------+-------------+------+------+------+------+------|
-     # |  Esc |   ~  |   4  |   5  |   6  |   @  |   !  |   -  |   =  |   (  |   )  |  \   |
+     # |   `  |   4  |   5  |   6  |   =  |   *  |   +  |   -  |   (  |   )  |   :  |  "   |
      # |------+------+------+------+------+------|------+------+------+------+------+------|
-     # |      |   `  |   7  |  8   |   9  |   %  |   &  |   _  |   /  |   [  |   ]  |Enter |
+     # | MAIN |   7  |   8  |  9   |   0  |   &  |   |  |   _  |   <  |   >  |   ?  |  @   |
      # |------+------+------+------+------+------+------+------+------+------+------+------|
      # | SYS  | Caps |      |  Ctrl|  NAV | GUI  |enter |Sp/SYM| Shift| Alt  |Insert|PrnScn|
      # `-----------------------------------------------------------------------------------'
      
     [  #PAD                                                     
-        XXXXXXX, KC.N0,   KC.N1,   KC.N2,   KC.N3, KC.DLR,  KC.HASH, KC.PLUS, KC.ASTR, KC.LCBR, KC.RCBR, KC.BSPC,
-        KC.ESC,  KC.TILD, KC.N4,   KC.N5,   KC.N6, KC.AT,   KC.EXLM, KC.MINS, KC.EQL,  KC.LPRN, KC.RPRN, KC.BSLS,
-        XXXXXXX, KC.GRV,  KC.N7,   KC.N8,   KC.N9, KC.PERC, KC.AMPR, KC.UNDS, KC.PSLS, KC.LBRC, KC.RBRC, KC.ENT,
+       KC.TILD, KC.N1, KC.N2, KC.N3, KC.EXLM, KC.HASH, KC.DLR,  KC.PERC, KC.LBRC, KC.RBRC, KC.LCBR, KC.RCBR,
+        KC.GRV, KC.N4, KC.N5, KC.N6, KC.EQL,  KC.ASTR, KC.PLUS, KC.MINS, KC.LPRN, KC.RPRN, KC.COLN, KC.DQUO,
+        MAIN,   KC.N7, KC.N8, KC.N9, KC.N0,   KC.AMPR, KC.PIPE, KC.UNDS, KC.LABK, KC.RABK, KC.QUES, KC.AT,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______
     ], 
     
