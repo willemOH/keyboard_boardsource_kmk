@@ -77,14 +77,14 @@ keyboard.keymap = [
      # |------+------+------+------+------+------|------+------+------+------+------+------|
      # | MAIN |   7  |   8  |  9   |   0  |   &  |   |  |   _  |   <  |   >  |   ?  |  @   |
      # |------+------+------+------+------+------+------+------+------+------+------+------|
-     # | SYS  | Caps |      |  Ctrl|  NAV | GUI  |enter |Sp/SYM| Shift| Alt  |Insert|PrnScn|
+     # | SYS  | Caps |   ^  |  Ctrl|  NAV | GUI  |enter |Sp/SYM| Shift| Alt  |Insert|PrnScn|
      # `-----------------------------------------------------------------------------------'
      
     [  #PAD                                                     
        KC.TILD, KC.N1, KC.N2, KC.N3, KC.EXLM, KC.HASH, KC.DLR,  KC.PERC, KC.LBRC, KC.RBRC, KC.LCBR, KC.RCBR,
         KC.GRV, KC.N4, KC.N5, KC.N6, KC.EQL,  KC.ASTR, KC.PLUS, KC.MINS, KC.LPRN, KC.RPRN, KC.COLN, KC.DQUO,
         MAIN,   KC.N7, KC.N8, KC.N9, KC.N0,   KC.AMPR, KC.PIPE, KC.UNDS, KC.LABK, KC.RABK, KC.QUES, KC.AT,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,  _______
+        _______, _______, KC.CIRC, _______, _______, _______, _______, _______, _______, _______, _______,  _______
     ], 
     
      # Layer _SYS
